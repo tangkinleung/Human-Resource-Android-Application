@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.a2007_hr_app.ui.home.HomeFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_attendance"
+            app:destination="@id/nav_attendance" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_camera"
+            app:destination="@id/nav_camera" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_leaves"
+        android:name="com.example.a2007_hr_app.ui.leaves.LeavesSummaryFragment"
+        android:label="Leave Summary"
+        tools:layout="@layout/fragment_leaves_summary" />
+
+    <fragment
+        android:id="@+id/nav_claims"
+        android:name="com.example.a2007_hr_app.ui.claims.ClaimsSummaryFragment"
+        android:label="Claims Summary"
+        tools:layout="@layout/fragment_claims_summary" />
+
+    <activity
+        android:id="@+id/nav_attendance"
+        android:name="com.example.a2007_hr_app.ui.attendance.AttendanceActivity"
+        android:label="Attendance History"
+        tools:layout="@layout/activity_attendance" />
+    <activity
+        android:id="@+id/nav_camera"
+        android:name="com.example.a2007_hr_app.QRCameraActivity"
+        android:label="activity_camera" />
+
+</navigation>

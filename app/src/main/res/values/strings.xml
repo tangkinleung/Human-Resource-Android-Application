@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">2007-HR-App</string>
+    <string name="sign_in">Sign In</string>
+    <string name="username">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="register">Register</string>
+    <string name="or_sign_in_with">or sign in with</string>
+    <string name="facebook_login">Facebook Login</string>
+    <string name="google_login">Google Login</string>
+    <string name="twitter_login">Twitter Login</string>
+    <string name="login">LOGIN</string>
+    <string name="title_activity_navbar">NavbarActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    //Strings used in Home Fragment
+    <string name="menu_home">Home</string>
+    <string name="home_welcome">Welcome, null</string>
+    <string name="home_profile_pic">Profile Picture</string>
+    <string name="home_attendance_header">Attendance</string>
+    <string name="home_claims_header">Claims</string>
+    <string name="home_attendance_history"><u>History -></u></string>
+    <string name="home_attendance_signed">Your not check-in!</string>
+    <string name="home_attendance_checkedin_datetime">Datetime: --/--/-- --:--Hrs</string>
+    <string name="home_attendance_location"> Location: None</string>
+    <string name="home_check_in"><u>Click to Check-in</u></string>
+    <string name="home_leave_balance">Leave balance</string>
+    <string name="home_annual_leave">Annual Leave:</string>
+    <string name="home_medical_leave">Medical Leave:</string>
+    <string name="home_compassionate_leave">Compassionate Leave:</string>
+    <string name="home_childcare_leave">Childcare Leave:</string>
+    <string name="home_annual_leave_balance">5 days left</string>
+    <string name="home_medical_leave_balance">0 days left</string>
+    <string name="home_compassionate_leave_balance">3 days left</string>
+    <string name="home_childcare_leave_balance">4 days left</string>
+    <string name="home_medical_claim">Medical Balance:</string>
+    <string name="home_transport_claim">Transport Balance:</string>
+    <string name="home_others_claim">Others:</string>
+    <string name="home_medical_amount">$500</string>
+    <string name="home_transport_amount">$150</string>
+    <string name="home_others_amount">$50</string>
+    <string name="Logout"><u>Logout -></u></string>
+
+    //Strings used in Attendance Fragment
+    <string name="attendance_history_header">Attendance History</string>
+    <string name="placeholder">Lorem</string>
+    <string name="location">Location:</string>
+    <string name="date_in">DateTime-In:</string>
+    <string name="date_out">DateTime-Out:</string>
+
+
+    //Strings used in CameraActivity Layout
+    <string name="camera_scan">Please scan the QR code.</string>
+
+    <!-- Common UI Buttons -->
+    <string name="submit">Submit</string>
+    <string name="clear">Clear</string>
+    <string name="amend">Amend</string>
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="status">Status</string>
+    <string name="action">Action</string>
+    <string name="delete">Delete</string>
+    <string name="application_submitted">Application Submitted</string>
+
+    <!-- Claims -->
+    <string name="claim_type">Claim Type</string>
+    <string name="amount_balance">Amount Balance</string>
+    <string name="amount_to_claim">Amount to Claim</string>
+    <string name="reason">Reason</string>
+    <string name="upload_document">Upload Documents</string>
+    <string name="claim_hint">Upload in .jpg</string>
+    <string name="claim_summary">Claim Summary</string>
+    <string name="apply_for_new_claim">Apply for new claim</string>
+    <string name="medical">Medical</string>
+    <string name="transport">Transport</string>
+    <string name="others">Others</string>
+    <string name="amount">Amount</string>
+
+
+    <!-- Used in leave screens-->
+    <string name="leaveSummary">Leave Summary</string>
+    <string name="leaveApplyButton">Apply for new leave</string>
+    <string name="leaveType">Leave Type</string>
+    <string name="StartDate">Start Date</string>
+    <string name="EndDate">End Date</string>
+    <string name="LeaveSup">Supervisor</string>
+    <string name="CovPersonal">Covering Personnel</string>
+    <string name="Covering">Covering</string>
+    <string name="SelectReason">Reason</string>
+    <string name="LeaveNotice">DO note that half day leaves starts or end on 12pm of date of leave application</string>
+    <string name="LeaveHeaderStart">Start Date</string>
+    <string name="LeaveHeaderEnd">End Date</string>
+    <string name="LeaveHeaderStatus">Status</string>
+    <string name="image_preview">Image Preview</string>
+    <string-array name="LeaveTypes">
+        <item>Medical</item>
+        <item>Annual</item>
+        <item>Childcare</item>
+        <item>Compassionate</item>
+    </string-array>
+
+    <string name="selected_item">Selected item:</string>
+
+    <string-array name="ClaimTypes">
+        <item>Medical</item>
+        <item>Transport</item>
+        <item>Others</item>
+    </string-array>
+</resources>

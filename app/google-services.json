@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "100328126241",
+    "project_id": "mad-hr",
+    "storage_bucket": "mad-hr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100328126241:android:4e0e95664ea30592903060",
+        "android_client_info": {
+          "package_name": "com.example.a2007_hr_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "100328126241-8v76dbt83tj7umj55c7bgo6nsp2pfkbl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHtus7eqT-W3NNjSUuFFyuy-jB-PZOmNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100328126241-8v76dbt83tj7umj55c7bgo6nsp2pfkbl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="Apply for Claim">
+
+
+    <EditText
+        android:id="@+id/editTextClaimAmountDialog"
+        android:layout_width="155dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="31dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAmountToClaimDialog"
+        app:layout_constraintStart_toEndOf="@+id/textViewAmountToClaimDialog"
+        app:layout_constraintTop_toTopOf="@+id/textViewAmountToClaimDialog" />
+
+    <EditText
+        android:id="@+id/editTextClaimsReasonDialog"
+        android:layout_width="157dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="31dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewClaimReasonDialog"
+        app:layout_constraintStart_toEndOf="@+id/textViewClaimReasonDialog"
+        app:layout_constraintTop_toTopOf="@+id/textViewClaimReasonDialog" />
+
+    <Spinner
+        android:id="@+id/spinnerClaimTypesDialog"
+        android:layout_width="154dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="31dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewClaimTypeDialog"
+        app:layout_constraintStart_toEndOf="@+id/textViewClaimTypeDialog"
+        app:layout_constraintTop_toTopOf="@+id/textViewClaimTypeDialog" />
+
+    <TextView
+        android:id="@+id/textViewAmountLeftDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Placeholder"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAmountBalanceDialog"
+        app:layout_constraintStart_toEndOf="@+id/textViewAmountBalanceDialog"
+        app:layout_constraintTop_toTopOf="@+id/textViewAmountBalanceDialog" />
+
+    <Button
+        android:id="@+id/buttonUploadDialog"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="31dp"
+        android:drawableBottom="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonGalleryDialog"
+        app:layout_constraintStart_toEndOf="@+id/textViewUploadDocDialog"
+        app:layout_constraintTop_toTopOf="@+id/buttonGalleryDialog" />
+
+    <TextView
+        android:id="@+id/textViewAmountBalanceDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/amount_balance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewClaimTypeDialog" />
+
+    <TextView
+        android:id="@+id/textViewUploadDocDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="58dp"
+        android:text="@string/upload_document"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewClaimReasonDialog" />
+
+    <TextView
+        android:id="@+id/textViewClaimTypeDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="53dp"
+        android:text="@string/claim_type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAmountToClaimDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/amount_to_claim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAmountBalanceDialog" />
+
+    <TextView
+        android:id="@+id/textViewClaimReasonDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/reason"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAmountToClaimDialog" />
+
+    <TextView
+        android:id="@+id/textViewClaimsFileURLDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/image_preview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUploadDialog" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonClaimsSubmitDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="@color/submit"
+        android:text="@string/submit"
+        app:layout_constraintStart_toEndOf="@+id/buttonClaimsClearDialog"
+        app:layout_constraintTop_toBottomOf="@+id/textViewClaimsFileURLDialog" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonClaimsClearDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="@color/clear"
+        android:text="@string/clear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewClaimsFileURLDialog" />
+
+    <TextView
+        android:id="@+id/textViewClaimsApplyTitle"
+        android:layout_width="163dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/apply_for_new_claim"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonGalleryDialog"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="21dp"
+        android:drawableBottom="@drawable/ic_image"
+        app:layout_constraintStart_toEndOf="@+id/buttonUploadDialog"
+        app:layout_constraintTop_toBottomOf="@+id/editTextClaimsReasonDialog" />
+
+    <ImageView
+        android:id="@+id/imageViewPreview"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewClaimsFileURLDialog"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGalleryDialog"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

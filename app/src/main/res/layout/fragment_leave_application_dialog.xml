@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.leaves.LeaveApplicationDialogFragment">
+
+    <TextView
+        android:id="@+id/textViewLeaveApplyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/leaveApplyButton"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLeaveTypeDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:text="@string/leaveType"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineLA2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerLeaveTypesDialog"
+        android:layout_width="154dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewLeaveTypeDialog"
+        app:layout_constraintStart_toEndOf="@+id/textViewLeaveTypeDialog"
+        app:layout_constraintTop_toTopOf="@+id/textViewLeaveTypeDialog" />
+
+    <TextView
+        android:id="@+id/textViewLeaveStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/StartDate"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLA"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLeaveTypeDialog" />
+
+    <EditText
+        android:id="@+id/editTextLeaveStartDate"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:hint="dd/mm/yyyy"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLA"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLeaveStartDate" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonLeaveStartAM"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:checked="true"
+        android:textOff="AM"
+        android:textOn="AM"
+        app:layout_constraintStart_toEndOf="@+id/editTextLeaveStartDate"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLeaveStartDate" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonLeaveStartPM"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:checked="false"
+        android:textOff="PM"
+        android:textOn="PM"
+        app:layout_constraintStart_toEndOf="@+id/toggleButtonLeaveStartAM"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLeaveStartDate" />
+
+    <TextView
+        android:id="@+id/textViewLeaveEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/EndDate"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLA"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLeaveStartDate" />
+
+    <EditText
+        android:id="@+id/editTextLeaveEndDate"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:hint="dd/mm/yyyy"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLA"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLeaveEndDate" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonLeaveEndAM"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:checked="true"
+        android:textOff="AM"
+        android:textOn="AM"
+        app:layout_constraintStart_toEndOf="@+id/editTextLeaveEndDate"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLeaveEndDate" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonLeaveEndPM"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:checked="false"
+        android:textOff="PM"
+        android:textOn="PM"
+        app:layout_constraintStart_toEndOf="@+id/toggleButtonLeaveEndAM"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLeaveEndDate" />
+
+    <TextView
+        android:id="@+id/textViewSupervisor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/LeaveSup"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineLA2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLeaveEndDate" />
+
+    <EditText
+        android:id="@+id/editTextLeaveSupervisor"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewSupervisor"
+        app:layout_constraintStart_toEndOf="@+id/textViewSupervisor"
+        app:layout_constraintTop_toTopOf="@+id/textViewSupervisor" />
+
+    <TextView
+        android:id="@+id/textViewCovering"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="@string/CovPersonal"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineLA2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSupervisor" />
+
+    <EditText
+        android:id="@+id/editTextLeaveCovering"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCovering"
+        app:layout_constraintStart_toEndOf="@+id/textViewCovering"
+        app:layout_constraintTop_toTopOf="@+id/textViewCovering" />
+
+    <TextView
+        android:id="@+id/textViewReason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="@string/SelectReason"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineLA2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCovering" />
+
+    <EditText
+        android:id="@+id/editTextLeaveReason"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewReason"
+        app:layout_constraintStart_toEndOf="@+id/textViewReason"
+        app:layout_constraintTop_toTopOf="@+id/textViewReason" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonClearLA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="@color/clear"
+        android:text="@string/clear"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLA"
+        app:layout_constraintTop_toBottomOf="@+id/textViewReason" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSubmitLA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="@color/submit"
+        android:text="@string/submit"
+        app:layout_constraintStart_toEndOf="@+id/buttonClearLA"
+        app:layout_constraintTop_toBottomOf="@+id/textViewReason" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLA2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="144dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
